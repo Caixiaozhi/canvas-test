@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/canvas.css">
+  <script src="assets/js/pixi.min.js"></script>
+  <script src="assets/js/variation.js"></script>  
+</head>
+<body class="body">
+  <script>
+    let type = "WebGL"
+    if(!PIXI.utils.isWebGLSupported()) {
+      type = "canvas"
+    }
+    PIXI.utils.sayHello(type)
+  </script>
+  <div id="content">
+    <div id="canvas-container"></div>
+  </div>
+  <audio id="audio" src=""></audio>  
+  <script src="assets/js/canvas.js"></script>
+</body>
+</html>
